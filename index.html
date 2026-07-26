@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="McLaren 720S — A perfeição da engenharia britânica e aerodinâmica ativa em forma de supercarro.">
+    <title>McLaren 720S — Raise Your Limits</title>
+    
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><path d=%22M10 80 L90 20 L90 35 L25 80 Z%22 fill=%22%23FF5200%22/></svg>" type="image/svg+xml">
+
+    <!-- Tipografia Limpa e Sofisticada -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ==================== NAVEGAÇÃO MINIMALISTA ==================== -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-brand">
+                <span class="brand-name">MCLAREN</span>
+                <span class="brand-model">720S</span>
+            </a>
+            <nav class="nav-menu">
+                <a href="#hero" class="nav-link">Visão Geral</a>
+                <a href="#interior" class="nav-link">Cockpit</a>
+                <a href="#aerodynamica" class="nav-link">Aerodinâmica</a>
+                <a href="#specs" class="nav-link">Especificações</a>
+            </nav>
+            <div class="nav-action">
+                <a href="#contato" class="btn-minimal">Agendar Test Drive</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==================== HERO SECTION (SCROLL-BOUND CANVAS - TEXTO ESQUERDO LIVRE) ==================== -->
+    <section class="scroll-bound" id="hero">
+        <div class="sticky-viewport">
+            <canvas id="hero-canvas"></canvas>
+            <div class="hero-gradient-overlay"></div>
+
+            <!-- Conteúdo Editorial Flutuante (Sem bordas pesadas) -->
+            <div class="hero-content" id="hero-content">
+                <span class="eyebrow">SUPER SERIES &mdash; WOKING, UK</span>
+                <h1 class="hero-title">Raise Your Limits.</h1>
+                <p class="hero-subtitle">
+                    A simbiose absoluta entre leveza em fibra de carbono e 720 cavalos de potência V8 Biturbo.
+                </p>
+            </div>
+
+            <div class="hero-footer">
+                <div class="scroll-label">EXPLORE EM DETALHES</div>
+                <div class="progress-track">
+                    <div class="progress-bar" id="progress-bar"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== INTERIOR SECTION (BACKGROUND PARALLAX & CARD DIREITO) ==================== -->
+    <section class="interior-section" id="interior">
+        <div class="interior-bg"></div>
+        <div class="interior-overlay"></div>
+        
+        <div class="container interior-content">
+            <div class="editorial-box" data-reveal>
+                <span class="eyebrow-accent">PILOTAGEM CENTRADA NO HUMANO</span>
+                <h2 class="section-title">O Santuário Monocage II.</h2>
+                <p class="section-description">
+                    Projetado em torno do condutor, o interior do McLaren 720S elimina qualquer distração visual. 
+                    A estrutura em fibra de carbono integral permite colunas ultrafinas com visibilidade de 360 graus em formato de gota, 
+                    enquanto o acabamento bespoke em Alcantara e couro Nappa abraça o piloto sob forças G extremas.
+                </p>
+                
+                <div class="specs-inline-row">
+                    <div class="inline-item">
+                        <span class="item-value">Monocage II</span>
+                        <span class="item-label">Chassi em Carbono</span>
+                    </div>
+                    <div class="inline-item">
+                        <span class="item-value">Folding Display</span>
+                        <span class="item-label">Painel Modo Pista</span>
+                    </div>
+                    <div class="inline-item">
+                        <span class="item-value">Alcantara</span>
+                        <span class="item-label">Acabamento Deep Navy</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TRAZEIRA & AERODINÂMICA ATIVA (EDITORIAL CLEAN) ==================== -->
+    <section class="aero-section" id="aerodynamica">
+        <div class="container aero-grid">
+            
+            <div class="aero-text" data-reveal>
+                <span class="eyebrow-accent">ENGENHARIA DO VENTO</span>
+                <h2 class="section-title">Aerodinâmica Ativa e Silenciosa.</h2>
+                <p class="section-description">
+                    A traseira do McLaren 720S não possui elementos estéticos desnecessários. Cada saída de ar, 
+                    o difusor profundo em fibra de carbono e o escapamento duplo em aço inoxidável posicionado no topo 
+                    trabalham em harmonia termodinâmica para gerar até 50% mais *downforce* que seu antecessor.
+                </p>
+                
+                <div class="feature-list">
+                    <div class="feature-row">
+                        <div class="feature-num">01</div>
+                        <div class="feature-body">
+                            <h4>Asa Traseira Ativa (Airbrake)</h4>
+                            <p>Atua como aerofólio em alta velocidade e aciona-se em meio segundo em frenagens intensas para estabilidade absoluta.</p>
+                        </div>
+                    </div>
+                    <div class="feature-row">
+                        <div class="feature-num">02</div>
+                        <div class="feature-body">
+                            <h4>Difusor de Efeito Solo</h4>
+                            <p>Desenvolvido no túnel de vento da Fórmula 1 para acelerar a extração de ar sob o assoalho, colando o carro ao asfalto.</p>
+                        </div>
+                    </div>
+                    <div class="feature-row">
+                        <div class="feature-num">03</div>
+                        <div class="feature-body">
+                            <h4>Assinatura LED Blade</h4>
+                            <p>Lanternas ultrafinas integradas diretamente às grades de dissipação térmica do motor V8 Biturbo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="aero-image-wrapper" data-reveal>
+                <img src="ARQUIVOS/trazeira%20do%20carro.jpeg" alt="Traseira do McLaren 720S - Asa Ativa e Difusor" class="aero-image">
+                <div class="image-caption">M840T 4.0L V8 Biturbo &mdash; Escapamento de alta saída com evacuação térmica otimizada.</div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==================== ESPECIFICAÇÕES TÉCNICAS (BENTO GRID & COLUNAS LIMPAS) ==================== -->
+    <section class="specs-section" id="specs">
+        <div class="container">
+            <div class="specs-header" data-reveal>
+                <span class="eyebrow-accent">ENGENHARIA DE WOKING</span>
+                <h2 class="section-title">Números sem Concessões.</h2>
+                <p class="section-description">
+                    Cada milímetro e grama do McLaren 720S foi justificado em túnel de vento e pista de testes para alcançar a supremacia absoluta na categoria Super Series.
+                </p>
+            </div>
+
+            <!-- Bento Grid de KPIs Limpo -->
+            <div class="specs-kpi-grid" data-reveal>
+                <div class="kpi-card highlight-card">
+                    <span class="kpi-num">720 <em>CV</em></span>
+                    <span class="kpi-label">Potência Máxima</span>
+                    <span class="kpi-sub">Motor M840T 4.0L V8 Biturbo a 7.500 RPM</span>
+                </div>
+                <div class="kpi-card">
+                    <span class="kpi-num">2.9 <em>s</em></span>
+                    <span class="kpi-label">Aceleração 0 a 100 km/h</span>
+                    <span class="kpi-sub">Sistema Launch Control Ativo</span>
+                </div>
+                <div class="kpi-card">
+                    <span class="kpi-num">341 <em>km/h</em></span>
+                    <span class="kpi-label">Velocidade Máxima</span>
+                    <span class="kpi-sub">Aerofólio Ativo em Modo V-Max</span>
+                </div>
+                <div class="kpi-card">
+                    <span class="kpi-num">1.283 <em>kg</em></span>
+                    <span class="kpi-label">Peso a Seco Leve</span>
+                    <span class="kpi-sub">Relação de 561 CV por tonelada</span>
+                </div>
+            </div>
+
+            <!-- Colunas Categorizadas de Detalhes (Sem emojis, design arquitetônico) -->
+            <div class="specs-columns" data-reveal>
+                <div class="spec-col">
+                    <h3 class="col-title"><span class="col-dot"></span> Powertrain &amp; Transmissão</h3>
+                    <div class="spec-list">
+                        <div class="spec-item">
+                            <span class="item-name">Motorização</span>
+                            <span class="item-val">4.0L (3.994 cc) V8 Biturbo 90&deg;</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="item-name">Torque Máximo</span>
+                            <span class="item-val">770 Nm (de 5.500 a 6.500 RPM)</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="item-name">Transmissão</span>
+                            <span class="item-val">7 Velocidades SSG Dupla Embreagem</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="item-name">Modos de Condução</span>
+                            <span class="item-val">Comfort / Sport / Track (Seletor MDI)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="spec-col">
+                    <h3 class="col-title"><span class="col-dot blue-dot"></span> Chassi, Freios &amp; Dinâmica</h3>
+                    <div class="spec-list">
+                        <div class="spec-item">
+                            <span class="item-name">Aceleração 0 a 200 km/h</span>
+                            <span class="item-val">7.8 segundos</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="item-name">Frenagem (100 a 0 km/h)</span>
+                            <span class="item-val">29.7 metros (Carbo-Cerâmicos)</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="item-name">Estrutura do Chassi</span>
+                            <span class="item-val">Monocage II em Carbono Integral</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="item-name">Suspensão Ativa</span>
+                            <span class="item-val">Proactive Chassis Control II (PCC II)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==================== CALL TO ACTION / FOOTER ==================== -->
+    <section class="contact-section" id="contato">
+        <div class="container contact-container" data-reveal>
+            <span class="eyebrow-accent">EXPERIÊNCIA BESPOKE</span>
+            <h2 class="contact-title">Sinta o Pulso de 720 Cavalos.</h2>
+            <p class="contact-subtitle">
+                Agende uma demonstração privada na McLaren São Paulo ou solicite uma consulta para configuração personalizada.
+            </p>
+
+            <form class="minimal-form" id="contact-form">
+                <div class="input-group">
+                    <input type="text" placeholder="Nome Completo" required class="form-input">
+                </div>
+                <div class="input-group">
+                    <input type="email" placeholder="E-mail Pessoal ou Corporativo" required class="form-input">
+                </div>
+                <div class="input-group">
+                    <input type="tel" placeholder="Telefone / WhatsApp" required class="form-input">
+                </div>
+                <button type="submit" class="btn-submit">Solicitar Contato VIP</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>MCLAREN 720S // DIGITAL SHOWCASE &amp; QUIET LUXURY ENGINE &copy; 2026. DESENVOLVIDO POR <strong style="color: #fff;">CARLOS GUEDES</strong>.</p>
+            <div class="footer-links">
+                <a href="https://github.com/carlosguedes-dev" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
+                <span>//</span>
+                <a href="README.md">Documentação</a>
+                <span>//</span>
+                <a href="CONTRIBUTING.md">Como Contribuir</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
