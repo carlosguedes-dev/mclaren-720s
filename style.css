@@ -203,6 +203,7 @@ body {
     object-fit: cover;
     z-index: 1;
     filter: contrast(1.03) saturate(1.05);
+    will-change: transform;
 }
 .hero-gradient-overlay {
     position: absolute;
@@ -294,7 +295,7 @@ body {
 .interior-bg {
     position: absolute;
     inset: 0;
-    background-image: url('ARQUIVOS/Interior%20do%20carro.jpeg');
+    background-image: url('ARQUIVOS/Interior%20do%20carro.webp');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

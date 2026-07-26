@@ -13,6 +13,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
+    <!-- Preload do 1º frame para inicialização instantânea do Hero Canvas -->
+    <link rel="preload" as="image" href="ARQUIVOS/Frammes/frame_0001.jpg" fetchpriority="high">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -132,7 +135,7 @@
             </div>
 
             <div class="aero-image-wrapper" data-reveal>
-                <img src="ARQUIVOS/trazeira%20do%20carro.jpeg" alt="Traseira do McLaren 720S - Asa Ativa e Difusor" class="aero-image">
+                <img src="ARQUIVOS/trazeira%20do%20carro.webp" alt="Traseira do McLaren 720S - Asa Ativa e Difusor" class="aero-image" loading="lazy" decoding="async">
                 <div class="image-caption">M840T 4.0L V8 Biturbo &mdash; Escapamento de alta saída com evacuação térmica otimizada.</div>
             </div>
 

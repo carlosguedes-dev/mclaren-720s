@@ -32,6 +32,12 @@
         if (!canvas || !ctx) return;
         for (let i = 1; i <= TOTAL_FRAMES; i++) {
             const img = new Image();
+            img.decoding = 'async'; // Decodificação assíncrona para não bloquear a thread principal
+            if (i === 1) {
+                img.fetchPriority = 'high'; // Prioridade máxima para desenhar o primeiro frame de imediato
+            } else {
+                img.fetchPriority = 'low'; // Evita competir na rede com CSS/fontes críticas
+            }
             img.src = `${FRAME_PATH}${String(i).padStart(4, '0')}${FRAME_EXT}`;
             img.onload = () => {
                 if (i === 1) {
@@ -85,6 +91,8 @@
         }
     }
 
+    let isDrawing = false;
+
     function onScroll() {
         // Navbar glass effect ao rolar
         if (navbar) {
@@ -112,7 +120,13 @@
 
         if (frameIndex !== currentFrame) {
             currentFrame = frameIndex;
-            requestAnimationFrame(() => drawFrame(currentFrame));
+            if (!isDrawing) {
+                isDrawing = true;
+                requestAnimationFrame(() => {
+                    drawFrame(currentFrame);
+                    isDrawing = false;
+                });
+            }
         }
 
         if (progressBar) {
